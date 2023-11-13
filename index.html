@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Generator</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
+            <div class="form">
+                <div class="wrapper">
+                    <div class="input-group">
+                        <label for="name">Inserisci il tuo nome</label>
+                        <input type="text" id="name" class="customInput">
+                    </div>
+                    <div class="input-group">
+                        <label for="kmTrip">Inserisci i km che vuoi percorrere</label>
+                        <input type="number" id="kmTrip" class="customInput">
+                    </div>
+                    <div class="input-group">
+                        <label for="userAge">Fascia d'eta'</label>
+                        <select name="age" id="userAge" class="customInput">
+                            <option value=""></option>
+                            <option value="teen">Minorenne</option>
+                            <option value="adult">Maggiorenne</option>
+                            <option value="elder">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="buttonWrapper">
+                    <button id="submit" class="btn">Invia</button>
+                </div>
+            </div>
+            <h2 class="title">I tuoi biglietti</h2>
+            <div id="output" class="wallet">
+                <!-- <div class="blankTicket">
+                    <h3>Nessun Biglietto Disponibile</h3>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

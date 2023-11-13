@@ -1,0 +1,149 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid rgb(25, 23, 104);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.gold {
+    color: gold;
+}
+
+.title {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.form {
+    width: 100%;
+    padding: 3rem 5rem;
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: 2rem;
+}
+
+.form .wrapper {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.form .wrapper label {
+    padding-bottom: 0.5rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: rgb(25, 23, 104);
+    font-weight: 500;
+}
+
+.form .wrapper .input-group {
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.form .wrapper .input-group .customInput {
+    padding: 5px;
+    border: 1px solid rgb(25, 23, 104);
+    border-radius: 25px;
+}
+
+.form .wrapper .input-group .customInput:hover {
+    transform: scale(1.05);
+}
+
+.form .wrapper .input-group .customInput:active {
+    border: 1px solid rgb(7, 7, 13);
+}
+
+.form .buttonWrapper {
+    text-align: center;
+}
+
+.wallet {
+    width: 100%;
+    height: 400px;
+    padding: 2rem 1rem;
+    background-color: white;
+    border-radius: 15px;
+    overflow-y: auto;
+}
+
+.wallet .blankTicket {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: rgb(25, 23, 104);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wallet .ticket {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+    border: 2px solid rgb(25, 23, 104);
+    border-radius: 5px;
+    display: flex;
+}
+
+.wallet .ticket:hover {
+    transform: scale(1.005);
+}
+
+.wallet .ticket .ticketName {
+    width: 25%;
+    height: 100%;
+    background-color: rgb(25, 23, 104);
+    color: white;
+    padding: 1rem 1.5rem;
+}
+
+.ticketName > h3 {
+    margin-bottom: 0.25rem;
+}
+
+.wallet .ticketInfo {
+    width: 75%;
+    height: 100%;
+    display: flex;
+}
+
+.wallet .ticketInfo .info {
+    width: calc(100% / 4);
+    height: 100%;
+    padding: 1rem;
+}
+
+.wallet .ticketInfo .info > h4 {
+    margin-bottom: 1rem;
+}
+
