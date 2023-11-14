@@ -54,6 +54,7 @@ submitButton.addEventListener("click", function() {
     nameWrapper.textContent = name == "" ? "Sconosciuto" : name;
     ticketName.append(nameWrapper);
 
+    // Inserisco .ticketname come figlio di .ticket
     ticket.append(ticketName);
 
     // Creazione .ticket > .ticketInfo
@@ -117,11 +118,15 @@ submitButton.addEventListener("click", function() {
 
     ticketInfo.append(ticketPrice);
 
+    // Inserisco .ticketInfo come figlio di .ticket
     ticket.append(ticketInfo);
+
     // Inserimento del ticket nel fragment
     fragment.append(ticket);
 
+    // Inserisco l'elemento di output in una variabile
     const element = document.getElementById("output");
+
     // element.innerHTML = "";
     element.append(fragment);
 });
